@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  locale="en"
+  title="404 — route not registered · Cimar Rodrigo Morales"
+  description="This route is not registered on this server."
+  noindex
+>
+  <main class="nf-wrap">
+    <div class="term term-shadow nf-term">
+      <div class="term-head">
+        <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
+        <span class="term-title">cimar@lapaz ~ %</span>
+      </div>
+      <div class="term-body" style="min-height: 0;">
+        <p class="term-line"><span class="term-prompt">$</span> curl https://cimar.dev{'/this-page'}</p>
+        <p class="t-err t-big" style="margin: 10px 0 0;">HTTP/1.1 404 Not Found</p>
+        <p class="term-line" style="margin-top: 14px;">error: route not registered</p>
+        <p class="term-line t-dim">hint: the handler you are looking for lives at /</p>
+      </div>
+    </div>
+    <a href="/" class="btn-solid nf-home">cd ~ <span class="mono">→</span></a>
+  </main>
+</BaseLayout>
