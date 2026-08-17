@@ -58,7 +58,6 @@ export interface Dict {
   contactH: string;
   contactBtn: string;
   contactMicro: string;
-  footBuilt: string;
 }
 
 const en: Dict = {
@@ -148,12 +147,12 @@ const en: Dict = {
   ],
   p2steps: [
     {
-      k: 'finish-line API',
+      k: '02 / finish-line API',
       h: 'The build',
       t: 'Backend for a race registration platform, built in Go with Gin. QR payment gateway integration with atomic transaction handling, hexagonal architecture, OpenAPI-documented REST API.',
     },
     {
-      k: 'finish-line API',
+      k: '02 / finish-line API',
       h: 'The status',
       t: 'Work in progress — the registration and payment flows are being built in the open.',
     },
@@ -195,7 +194,6 @@ const en: Dict = {
   contactH: 'Want to talk? My inbox is open.',
   contactBtn: 'Say hello',
   contactMicro: '→ 200 OK · replies in < 24h',
-  footBuilt: 'built with',
 };
 
 const es: Dict = {
@@ -285,12 +283,12 @@ const es: Dict = {
   ],
   p2steps: [
     {
-      k: 'finish-line API',
+      k: '02 / finish-line API',
       h: 'La construcción',
       t: 'Backend para una plataforma de inscripción a carreras, construido en Go con Gin. Integración con pasarela de pagos QR con manejo atómico de transacciones, arquitectura hexagonal y API REST documentada con OpenAPI.',
     },
     {
-      k: 'finish-line API',
+      k: '02 / finish-line API',
       h: 'El estado',
       t: 'Trabajo en progreso — los flujos de inscripción y pago se están construyendo en abierto.',
     },
@@ -332,7 +330,6 @@ const es: Dict = {
   contactH: '¿Hablamos? Mi bandeja de entrada está abierta.',
   contactBtn: 'Escríbeme',
   contactMicro: '→ 200 OK · respondo en < 24h',
-  footBuilt: 'hecho con',
 };
 
 const dictionaries: Record<Locale, Dict> = { en, es };
