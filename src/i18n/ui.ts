@@ -65,12 +65,12 @@ const en: Dict = {
   meta: {
     title: 'Cimar Rodrigo Morales — Backend Developer',
     description:
-      'Backend developer based in La Paz, Bolivia. I build backend services for banking — and REST APIs in Go on my own time.',
+      'Backend developer based in La Paz, Bolivia. I build backend services in the financial sector — and REST APIs in Go on my own time.',
   },
   nav: ['experience', 'projects', 'about', 'contact'],
   badge: 'Open to remote backend roles',
   tagline:
-    'I build backend services for banking — and REST APIs in Go on my own time. Based in La Paz, Bolivia 🇧🇴',
+    'I build backend services in the financial sector — and REST APIs in Go on my own time. Based in La Paz, Bolivia 🇧🇴',
   cv: 'Download CV',
   view: 'view source',
   inDev: 'In development',
@@ -92,7 +92,7 @@ const en: Dict = {
       desc: "Backend developer on the automation team, building services and internal applications for the bank's operations.",
       bullets: [
         'Designed and built a full-stack internal application end to end: .NET Core REST API, Angular front end, Oracle persistence — from requirements to production.',
-        "Work on the bank's core platform migration from AS400/DB2 to Oracle, writing SQL for data reconciliation, validation and reporting against production systems.",
+        "Develop migration processes for the bank's core platform move from AS400/DB2 to Oracle, including data validation and reconciliation against production systems.",
       ],
     },
     {
@@ -202,12 +202,12 @@ const es: Dict = {
   meta: {
     title: 'Cimar Rodrigo Morales — Backend Developer',
     description:
-      'Desarrollador backend radicado en La Paz, Bolivia. Construyo servicios backend para banca — y APIs REST en Go en mi tiempo libre.',
+      'Desarrollador backend radicado en La Paz, Bolivia. Construyo servicios backend en el sector financiero — y APIs REST en Go en mi tiempo libre.',
   },
   nav: ['experiencia', 'proyectos', 'sobre mí', 'contacto'],
   badge: 'Abierto a roles backend remotos',
   tagline:
-    'Construyo servicios backend para banca — y APIs REST en Go en mi tiempo libre. Desde La Paz, Bolivia 🇧🇴',
+    'Construyo servicios backend en el sector financiero — y APIs REST en Go en mi tiempo libre. Desde La Paz, Bolivia 🇧🇴',
   cv: 'Descargar CV',
   view: 'ver código',
   inDev: 'En desarrollo',
@@ -229,7 +229,7 @@ const es: Dict = {
       desc: 'Desarrollador backend en el equipo de automatización, construyendo servicios y aplicaciones internas para las operaciones del banco.',
       bullets: [
         'Diseñé y construí una aplicación interna full-stack de punta a punta: API REST en .NET Core, front end en Angular y persistencia en Oracle — desde los requerimientos hasta producción.',
-        'Trabajo en la migración del core bancario de AS400/DB2 a Oracle, escribiendo SQL para conciliación, validación y reportes contra sistemas en producción.',
+        'Desarrollo procesos de migración para el cambio de la plataforma core del banco de AS400/DB2 a Oracle, incluyendo validación y conciliación de datos sobre sistemas en producción.',
       ],
     },
     {
