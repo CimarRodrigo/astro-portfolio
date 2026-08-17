@@ -1,0 +1,23 @@
+{
+  "name": "astro-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "og": "node scripts/generate-og.mjs"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.4.0",
+    "@fontsource/geist-sans": "^5.2.0",
+    "@fontsource/jetbrains-mono": "^5.2.0",
+    "@tailwindcss/vite": "^4.1.0",
+    "astro": "^5.12.0",
+    "tailwindcss": "^4.1.0"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.0"
+  }
+}

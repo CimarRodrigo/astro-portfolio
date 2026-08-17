@@ -1,0 +1,25 @@
+# build output
+dist/
+# generated types
+.astro/
+# dependencies
+node_modules/
+# logs
+npm-debug.log*
+# environment variables
+.env
+.env.production
+# macOS
+.DS_Store
+
+# design handoff reference material (not part of the build)
+design_handoff_portfolio/
+uploads/
+support.js
+Portfolio Cimar.dc.html
+/cv-cimar-morales-en.pdf
+/cv-cimar-morales-es.pdf
+
+# local AI tooling
+.atl/
+.claude/
