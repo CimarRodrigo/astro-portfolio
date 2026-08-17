@@ -1,0 +1,39 @@
+---
+import { getDict, cvHref, SOCIAL, type Locale } from '../i18n/ui';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = getDict(locale);
+---
+
+<header id="top" class="hero">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div>
+      <p class="hero-badge"><span class="accent-dot"></span>{t.badge}</p>
+      <h1 class="hero-h1">Cimar Rodrigo Morales</h1>
+      <p class="hero-role">Backend Developer</p>
+      <p class="hero-tagline">{t.tagline}</p>
+      <div class="hero-actions">
+        <a href={cvHref(locale)} download class="btn-solid">{t.cv} <span class="mono">↓</span></a>
+        <a href={SOCIAL.github} target="_blank" rel="noopener" class="btn-pill">GitHub</a>
+        <a href={SOCIAL.linkedin} target="_blank" rel="noopener" class="btn-pill">LinkedIn</a>
+        <a href={SOCIAL.email} class="btn-pill">Email</a>
+      </div>
+    </div>
+    <div class="term term-shadow">
+      <div class="term-head">
+        <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
+        <span class="term-title">cimar@lapaz ~ %</span>
+      </div>
+      <div class="term-body">
+        <p class="term-line"><span class="term-prompt">$</span> curl https://api.cimar.dev/v1/me</p>
+        <p class="term-status" data-status>HTTP/1.1 200 OK</p>
+        <pre class="term-json"><span data-typed></span><span class="term-caret" aria-hidden="true"></span></pre>
+      </div>
+    </div>
+  </div>
+</header>

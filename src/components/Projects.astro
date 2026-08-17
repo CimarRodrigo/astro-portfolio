@@ -1,0 +1,134 @@
+---
+import { getDict, type Locale } from '../i18n/ui';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = getDict(locale);
+
+const p1Tags = ['Spring Boot', 'Vue', 'Google OAuth2', 'MySQL'];
+const p2Tags = ['Go', 'Gin', 'PostgreSQL', 'Hexagonal'];
+---
+
+<section id="projects" class="section" style="padding-bottom: 20px;">
+  <p class="route-label" data-reveal>GET /projects</p>
+  <h2 class="section-h2" style="margin-bottom: 60px;" data-reveal>{t.secProj}</h2>
+
+  <!-- Featured #1 — Plataforma Académica -->
+  <div class="fp-grid">
+    <div class="fp-sticky">
+      <div class="fp-panel" data-fp-panel="1" data-active="0">
+        <div class="term-head">
+          <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
+          <span class="term-title">plataforma-academica</span>
+        </div>
+        <div class="fp-layer" data-layer="0">
+          <p class="t-text"><span class="t-accent">$</span> grep -r "study material" umsa/</p>
+          <p class="t-err" style="margin: 10px 0 0;">grep: no central repository found</p>
+          <p class="t-dim" style="margin: 22px 0 0;">GET /materials</p>
+          <p class="t-err t-big" style="margin: 0;">404 Not Found</p>
+        </div>
+        <div class="fp-layer" data-layer="1" style="line-height: 2.15;">
+          <p class="t-text"><span class="t-accent">POST</span> /materials <span class="t-dim">→ 201</span></p>
+          <p class="t-text"><span class="t-accent">GET</span> /courses/:id/materials <span class="t-dim">→ 200</span></p>
+          <p class="t-text"><span class="t-accent">POST</span> /materials/:id/vote <span class="t-dim">→ 200</span></p>
+          <p class="t-text"><span class="t-accent">GET</span> /leaderboard?range=weekly <span class="t-dim">→ 200</span></p>
+          <p class="t-text"><span class="t-accent">POST</span> /reports <span class="t-dim">→ 202</span></p>
+          <p class="t-dim" style="margin: 14px 0 0;">auth: Google OAuth2 · passwords stored: 0</p>
+        </div>
+        <div class="fp-layer" data-layer="2" style="line-height: 2.1;">
+          <p class="t-accent t-big" style="margin: 0;">HTTP/1.1 200 OK</p>
+          <p class="t-text" style="margin: 14px 0 0;">deployed: faculty intranet</p>
+          <p class="t-text">status: in production since 2025</p>
+          <p class="t-text">thesis: approved ✓</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      {t.p1steps.map((st, i) => (
+        <div class="fp-step" data-fp="1" data-idx={i}>
+          <p class="fp-step-k">{st.k}</p>
+          <h3 class="fp-step-h">{st.h}</h3>
+          <p class="fp-step-t">{st.t}</p>
+        </div>
+      ))}
+      <div class="fp-outro">
+        <div class="chip-row">
+          {p1Tags.map((tag) => <span class="chip">{tag}</span>)}
+        </div>
+        <a
+          href="https://github.com/CimarRodrigo/plataforma-academica"
+          target="_blank"
+          rel="noopener"
+          class="src-link"
+        >{t.view} →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured #2 — finish-line API -->
+  <div class="fp-grid fp-last">
+    <div class="fp-sticky">
+      <div class="fp-panel" data-fp-panel="2" data-active="0">
+        <div class="term-head">
+          <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
+          <span class="term-title">finish-line — main.go</span>
+        </div>
+        <div class="fp-layer go-code" data-layer="0">
+          <p class="go-line go-text"><span class="go-kw">func</span> <span class="go-fn">(s *PaymentSvc)</span> <span class="go-fn">Confirm</span>(ctx, regID) <span class="go-kw">error</span> &lbrace;</p>
+          <p class="go-line go-indent go-text">tx, _ := s.db.<span class="go-fn">BeginTx</span>(ctx)</p>
+          <p class="go-line go-indent go-text"><span class="go-kw">defer</span> tx.<span class="go-fn">Rollback</span>()</p>
+          <p class="go-line go-indent go-comment">// QR gateway → atomic confirm</p>
+          <p class="go-line go-indent go-text"><span class="go-kw">return</span> tx.<span class="go-fn">Commit</span>()</p>
+          <p class="go-line go-text">&rbrace;</p>
+        </div>
+        <div class="fp-layer" data-layer="1" style="line-height: 2.1;">
+          <p class="t-text">POST /registrations <span class="t-accent">→ 201 Created</span></p>
+          <p class="t-text">payment: confirmed (QR)</p>
+          <p class="t-text">docs: /openapi.yaml</p>
+          <p style="margin: 20px 0 0;"><span class="wip-badge">● {t.inDev}</span></p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class="fp-kicker">02 / finish-line API</p>
+      {t.p2steps.map((st, i) => (
+        <div class="fp-step fp-step-short" data-fp="2" data-idx={i}>
+          <p class="fp-step-k">{st.k}</p>
+          <h3 class="fp-step-h">{st.h}</h3>
+          <p class="fp-step-t">{st.t}</p>
+        </div>
+      ))}
+      <div class="fp-outro">
+        <div class="chip-row">
+          {p2Tags.map((tag) => <span class="chip">{tag}</span>)}
+        </div>
+        <a
+          href="https://github.com/CimarRodrigo/go-finish-line-api"
+          target="_blank"
+          rel="noopener"
+          class="src-link"
+        >{t.view} →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cards row -->
+  <div class="cards-grid">
+    {t.cards.map((c) => (
+      <article class="proj-card" data-reveal>
+        <div class="proj-card-head">
+          <h3 class="proj-card-title">{c.title}</h3>
+          {c.wip && <span class="card-wip-badge">● {t.inDev}</span>}
+        </div>
+        <p class="proj-card-desc">{c.desc}</p>
+        <div class="proj-card-tags">
+          {c.tags.map((tag) => <span class="tag">{tag}</span>)}
+        </div>
+        <a href={c.link} target="_blank" rel="noopener" class="src-link">{t.view} →</a>
+      </article>
+    ))}
+  </div>
+</section>

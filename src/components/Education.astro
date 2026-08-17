@@ -1,0 +1,24 @@
+---
+import { getDict, type Locale } from '../i18n/ui';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = getDict(locale);
+---
+
+<section id="education" class="section">
+  <p class="route-label" data-reveal>GET /education</p>
+  <h2 class="section-h2 edu-h2" data-reveal>{t.secEdu}</h2>
+  <div class="edu-list">
+    {t.edu.map((e) => (
+      <div class="edu-row" data-reveal>
+        <h3 class="edu-title">{e.t}</h3>
+        <p class="edu-sub">{e.s}</p>
+        {e.d && <p class="edu-note">{e.d}</p>}
+      </div>
+    ))}
+  </div>
+</section>

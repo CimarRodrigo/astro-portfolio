@@ -1,0 +1,22 @@
+---
+import { getDict, cvHref, SOCIAL, type Locale } from '../i18n/ui';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = getDict(locale);
+---
+
+<section id="contact" class="contact-section">
+  <p class="route-label" data-reveal>POST /contact</p>
+  <h2 class="contact-h2" data-reveal>{t.contactH}</h2>
+  <div class="contact-actions" data-reveal>
+    <a href={SOCIAL.email} class="btn-solid contact-cta">{t.contactBtn}</a>
+    <a href={cvHref(locale)} download class="btn-pill contact-pill">{t.cv} ↓</a>
+    <a href={SOCIAL.github} target="_blank" rel="noopener" class="btn-pill contact-pill">GitHub</a>
+    <a href={SOCIAL.linkedin} target="_blank" rel="noopener" class="btn-pill contact-pill">LinkedIn</a>
+  </div>
+  <p class="contact-micro" data-reveal>{t.contactMicro}</p>
+</section>
