@@ -1,0 +1,88 @@
+---
+import { ClientRouter } from 'astro:transitions';
+import type { Locale } from '../i18n/ui';
+import '../styles/global.css';
+
+interface Props {
+  locale: Locale;
+  title: string;
+  description: string;
+  noindex?: boolean;
+}
+
+const { locale, title, description, noindex = false } = Astro.props;
+
+const site = Astro.site!;
+const canonical = new URL(Astro.url.pathname, site);
+const enUrl = new URL('/', site);
+const esUrl = new URL('/es/', site);
+const ogImage = new URL('/og.png', site);
+const ogLocale = locale === 'es' ? 'es_ES' : 'en_US';
+const ogLocaleAlt = locale === 'es' ? 'en_US' : 'es_ES';
+
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Cimar Rodrigo Morales',
+  jobTitle: 'Backend Developer',
+  url: site.toString(),
+  sameAs: [
+    'https://github.com/CimarRodrigo',
+    'https://linkedin.com/in/cimar-rodrigo-morales',
+  ],
+});
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content="Cimar Rodrigo Morales" />
+    {noindex && <meta name="robots" content="noindex" />}
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="en" href={enUrl} />
+    <link rel="alternate" hreflang="es" href={esUrl} />
+    <link rel="alternate" hreflang="x-default" href={enUrl} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta name="theme-color" content="#0a0a0a" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content={ogLocale} />
+    <meta property="og:locale:alternate" content={ogLocaleAlt} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <script type="application/ld+json" set:html={jsonLd} />
+
+    <!-- Theme before first paint: no flash. Re-runs after view transitions. -->
+    <script is:inline data-astro-rerun>
+      (function () {
+        var theme = 'dark';
+        try {
+          theme =
+            localStorage.getItem('theme') ||
+            (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        } catch (e) {}
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+
+    <ClientRouter />
+  </head>
+  <body>
+    <slot />
+    <script src="../scripts/site.ts"></script>
+  </body>
+</html>
