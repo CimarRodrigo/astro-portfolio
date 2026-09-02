@@ -64,12 +64,12 @@ const en: Dict = {
   meta: {
     title: 'Cimar Rodrigo Morales — Backend Developer',
     description:
-      'Backend developer based in La Paz, Bolivia. I build backend services in the financial sector — and REST APIs in Go on my own time.',
+      'Backend developer based in La Paz, Bolivia. I build backend services in the financial sector, and REST APIs in Go on my own time.',
   },
   nav: ['experience', 'projects', 'about', 'contact'],
   badge: 'Open to remote backend roles',
   tagline:
-    'I build backend services in the financial sector — and REST APIs in Go on my own time. Based in La Paz, Bolivia 🇧🇴',
+    'I build backend services in the financial sector, and REST APIs in Go on my own time. Based in La Paz, Bolivia 🇧🇴',
   cv: 'Download CV',
   view: 'view source',
   inDev: 'In development',
@@ -77,20 +77,21 @@ const en: Dict = {
   secProj: 'Projects',
   secAbout: 'About me',
   secEdu: 'Education',
-  aboutP1: "Hi! I'm a backend developer based in La Paz, Bolivia.",
+  aboutP1:
+    "Hi! I'm Cimar. My first production code wasn't at a bank: it was my thesis, a study-material sharing platform I built for UMSA's Faculty of Humanities. Before that I was already teaching programming fundamentals to first-semester students, where I learned that explaining something is the best way to truly understand it.",
   aboutP2:
-    'I work at Banco Bisa, building backend services and internal applications — .NET and Java on the server, Angular on the front end, Oracle and SQL Server underneath.',
+    "Today I work at Banco Bisa, where I build backend services and internal applications for the bank's operations.",
   aboutP3:
-    "Right now I'm focused on Go. I'm building REST APIs in my free time, applying hexagonal architecture and DDD, and studying how the language works under the hood — concurrency, internals, the parts most people skip. It's where I want to take my career.",
+    "Right now I'm all in on Go. I build REST APIs in my free time applying hexagonal architecture and DDD, and study how the language works under the hood: concurrency, internals, the parts most people skip.",
   exp: [
     {
       role: 'Automation Developer',
       company: 'Banco Bisa S.A.',
       date: 'Jul 2025 – Present',
       loc: 'La Paz, Bolivia',
-      desc: "Backend developer on the automation team, building services and internal applications for the bank's operations.",
+      desc: "Backend developer on the migration team, building services and internal applications for the bank's operations.",
       bullets: [
-        'Designed and built a full-stack internal application end to end: .NET Core REST API, Angular front end, Oracle persistence — from requirements to production.',
+        'Designed and built a full-stack internal application end to end: .NET Core REST API, Angular front end, Oracle persistence, from requirements to production.',
         "Develop migration processes for the bank's core platform move from AS400/DB2 to Oracle, including data validation and reconciliation against production systems.",
       ],
     },
@@ -137,12 +138,12 @@ const en: Dict = {
     {
       k: '01 / Plataforma Académica',
       h: 'The build',
-      t: 'A sharing platform where students upload course material, comment and vote. Weekly and global leaderboards surface the best contributors. Reported content routes to a moderation queue with reviewer roles. Google OAuth2 — no passwords stored. Spring Boot REST API + Vue.',
+      t: 'A sharing platform where students upload course material, comment and vote. Weekly and global leaderboards surface the best contributors. Reported content routes to a moderation queue with reviewer roles. Google OAuth2, so no passwords stored. Spring Boot REST API + Vue.',
     },
     {
       k: '01 / Plataforma Académica',
       h: 'The result',
-      t: "My undergraduate thesis — deployed to production on the faculty's intranet, where students still use it.",
+      t: "My undergraduate thesis, deployed to production on the faculty's intranet, where students still use it.",
     },
   ],
   p2steps: [
@@ -154,21 +155,21 @@ const en: Dict = {
     {
       k: '02 / finish-line API',
       h: 'The status',
-      t: 'Work in progress — the registration and payment flows are being built in the open.',
+      t: 'Work in progress. The registration and payment flows are being built in the open.',
     },
   ],
   cards: [
     {
       title: 'Payment Management API',
       wip: true,
-      desc: 'Payment management API for residential building administration — income, expenses, co-owner dues and debt tracking. Go, hexagonal architecture and DDD Lite.',
+      desc: 'Payment management API for residential building administration: income, expenses, co-owner dues and debt tracking. Go, hexagonal architecture and DDD Lite.',
       tags: ['Go', 'Gin', 'DDD'],
       link: 'https://github.com/CimarRodrigo/go-payment-management-api',
     },
     {
       title: 'Aux-111',
       wip: false,
-      desc: 'Teaching material for Introduction to Programming at UMSA — Java exercises written for first-semester students, still used as a reference.',
+      desc: 'Teaching material for Introduction to Programming at UMSA. Java exercises written for first-semester students, still used as a reference.',
       tags: ['Java', 'Teaching'],
       link: 'https://github.com/CimarRodrigo/Aux-111',
     },
@@ -186,7 +187,7 @@ const en: Dict = {
       d: 'Thesis deployed to production at the Faculty of Humanities.',
     },
     {
-      t: 'English — B2 (Upper-Intermediate)',
+      t: 'English · B2 (Upper-Intermediate)',
       s: 'Centro Boliviano Americano, La Paz',
       d: '',
     },
@@ -200,12 +201,12 @@ const es: Dict = {
   meta: {
     title: 'Cimar Rodrigo Morales — Backend Developer',
     description:
-      'Desarrollador backend radicado en La Paz, Bolivia. Construyo servicios backend en el sector financiero — y APIs REST en Go en mi tiempo libre.',
+      'Desarrollador backend radicado en La Paz, Bolivia. Construyo servicios backend en el sector financiero, y APIs REST en Go en mi tiempo libre.',
   },
   nav: ['experiencia', 'proyectos', 'sobre mí', 'contacto'],
   badge: 'Abierto a roles backend remotos',
   tagline:
-    'Construyo servicios backend en el sector financiero — y APIs REST en Go en mi tiempo libre. Desde La Paz, Bolivia 🇧🇴',
+    'Construyo servicios backend en el sector financiero, y APIs REST en Go en mi tiempo libre. Desde La Paz, Bolivia 🇧🇴',
   cv: 'Descargar CV',
   view: 'ver código',
   inDev: 'En desarrollo',
@@ -213,20 +214,21 @@ const es: Dict = {
   secProj: 'Proyectos',
   secAbout: 'Sobre mí',
   secEdu: 'Educación',
-  aboutP1: '¡Hola! Soy desarrollador backend, radicado en La Paz, Bolivia.',
+  aboutP1:
+    '¡Hola! Soy Cimar. Mi primer código en producción no fue en un banco: fue mi tesis, una plataforma para compartir material de estudio que construí para la Facultad de Humanidades de la UMSA. Antes de eso ya enseñaba fundamentos de programación a estudiantes de primer semestre, y ahí descubrí que explicar algo es la mejor forma de entenderlo de verdad.',
   aboutP2:
-    'Trabajo en Banco Bisa, construyendo servicios backend y aplicaciones internas — .NET y Java en el servidor, Angular en el front end, Oracle y SQL Server por debajo.',
+    'Hoy trabajo en Banco Bisa, donde construyo servicios backend y aplicaciones internas para las operaciones del banco.',
   aboutP3:
-    'Ahora mismo estoy enfocado en Go. Construyo APIs REST en mi tiempo libre, aplicando arquitectura hexagonal y DDD, y estudio cómo funciona el lenguaje por dentro — concurrencia, internals, las partes que la mayoría se salta. Es hacia donde quiero llevar mi carrera.',
+    'Mi obsesión actual es Go. Construyo APIs REST en mi tiempo libre aplicando arquitectura hexagonal y DDD, y estudio cómo funciona el lenguaje por dentro: concurrencia, internals, las partes que la mayoría se salta.',
   exp: [
     {
       role: 'Desarrollador de Automatización',
       company: 'Banco Bisa S.A.',
       date: 'Jul 2025 – Presente',
       loc: 'La Paz, Bolivia',
-      desc: 'Desarrollador backend en el equipo de automatización, construyendo servicios y aplicaciones internas para las operaciones del banco.',
+      desc: 'Desarrollador backend en el equipo de migración, construyendo servicios y aplicaciones internas para las operaciones del banco.',
       bullets: [
-        'Diseñé y construí una aplicación interna full-stack de punta a punta: API REST en .NET Core, front end en Angular y persistencia en Oracle — desde los requerimientos hasta producción.',
+        'Diseñé y construí una aplicación interna full-stack de punta a punta: API REST en .NET Core, front end en Angular y persistencia en Oracle, desde los requerimientos hasta producción.',
         'Desarrollo procesos de migración para el cambio de la plataforma core del banco de AS400/DB2 a Oracle, incluyendo validación y conciliación de datos sobre sistemas en producción.',
       ],
     },
@@ -273,12 +275,12 @@ const es: Dict = {
     {
       k: '01 / Plataforma Académica',
       h: 'La construcción',
-      t: 'Una plataforma donde los estudiantes suben material de sus cursos, comentan y votan. Rankings semanales y globales destacan a los mejores contribuidores. El contenido reportado pasa a una cola de moderación con roles de revisor. Google OAuth2 — sin contraseñas almacenadas. API REST en Spring Boot + Vue.',
+      t: 'Una plataforma donde los estudiantes suben material de sus cursos, comentan y votan. Rankings semanales y globales destacan a los mejores contribuidores. El contenido reportado pasa a una cola de moderación con roles de revisor. Google OAuth2, así que no se almacenan contraseñas. API REST en Spring Boot + Vue.',
     },
     {
       k: '01 / Plataforma Académica',
       h: 'El resultado',
-      t: 'Mi tesis de licenciatura — desplegada a producción en la intranet de la facultad, donde los estudiantes la siguen usando.',
+      t: 'Mi tesis de licenciatura, desplegada a producción en la intranet de la facultad, donde los estudiantes la siguen usando.',
     },
   ],
   p2steps: [
@@ -290,21 +292,21 @@ const es: Dict = {
     {
       k: '02 / finish-line API',
       h: 'El estado',
-      t: 'Trabajo en progreso — los flujos de inscripción y pago se están construyendo en abierto.',
+      t: 'Trabajo en progreso. Los flujos de inscripción y pago se están construyendo en abierto.',
     },
   ],
   cards: [
     {
       title: 'Payment Management API',
       wip: true,
-      desc: 'API de gestión de pagos para administración de edificios residenciales — ingresos, gastos, cuotas de copropietarios y seguimiento de deudas. Go, arquitectura hexagonal y DDD Lite.',
+      desc: 'API de gestión de pagos para administración de edificios residenciales: ingresos, gastos, cuotas de copropietarios y seguimiento de deudas. Go, arquitectura hexagonal y DDD Lite.',
       tags: ['Go', 'Gin', 'DDD'],
       link: 'https://github.com/CimarRodrigo/go-payment-management-api',
     },
     {
       title: 'Aux-111',
       wip: false,
-      desc: 'Material de enseñanza para Introducción a la Programación en la UMSA — ejercicios en Java escritos para estudiantes de primer semestre, todavía usados como referencia.',
+      desc: 'Material de enseñanza para Introducción a la Programación en la UMSA. Ejercicios en Java escritos para estudiantes de primer semestre, todavía usados como referencia.',
       tags: ['Java', 'Docencia'],
       link: 'https://github.com/CimarRodrigo/Aux-111',
     },
@@ -322,7 +324,7 @@ const es: Dict = {
       d: 'Tesis desplegada a producción en la Facultad de Humanidades.',
     },
     {
-      t: 'Inglés — B2 (Intermedio alto)',
+      t: 'Inglés · B2 (Intermedio alto)',
       s: 'Centro Boliviano Americano, La Paz',
       d: '',
     },
@@ -349,5 +351,5 @@ export function cvHref(locale: Locale): string {
 export const SOCIAL = {
   github: 'https://github.com/CimarRodrigo',
   linkedin: 'https://linkedin.com/in/cimar-rodrigo-morales',
-  email: 'mailto:rdo15072001@gmail.com',
+  email: 'mailto:cimar.morales.dev@gmail.com',
 } as const;
