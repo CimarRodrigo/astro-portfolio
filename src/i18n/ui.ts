@@ -62,7 +62,7 @@ export interface Dict {
 
 const en: Dict = {
   meta: {
-    title: 'Cimar Rodrigo Morales — Backend Developer',
+    title: 'Cimar Rodrigo Morales · Backend Developer',
     description:
       'Backend developer based in La Paz, Bolivia. I build backend services in the financial sector, and REST APIs in Go on my own time.',
   },
@@ -92,7 +92,7 @@ const en: Dict = {
       desc: "Backend developer on the migration team, building services and internal applications for the bank's operations.",
       bullets: [
         'Designed and built a full-stack internal application end to end: .NET Core REST API, Angular front end, Oracle persistence, from requirements to production.',
-        "Develop migration processes for the bank's core platform move from AS400/DB2 to Oracle, including data validation and reconciliation against production systems.",
+        "Develop tools for the bank's core platform migration from AS400/DB2 to Oracle, including data validation and reconciliation against production systems.",
       ],
     },
     {
@@ -107,7 +107,7 @@ const en: Dict = {
       ],
     },
     {
-      role: 'Intern',
+      role: 'Backend Developer Intern',
       company: 'Faculty of Humanities and Education Sciences (UMSA)',
       date: 'Jul 2024 – Dec 2024',
       loc: 'La Paz, Bolivia',
@@ -169,7 +169,7 @@ const en: Dict = {
     {
       title: 'Aux-111',
       wip: false,
-      desc: 'Teaching material for Introduction to Programming at UMSA. Java exercises written for first-semester students, still used as a reference.',
+      desc: 'Teaching material for Introduction to Programming at UMSA. Java exercises written for first-semester students.',
       tags: ['Java', 'Teaching'],
       link: 'https://github.com/CimarRodrigo/Aux-111',
     },
@@ -178,7 +178,7 @@ const en: Dict = {
     { label: 'building with', items: ['Go', 'Java / Spring Boot', 'C# / .NET'] },
     { label: 'front end when needed', items: ['Vue', 'Angular', 'TypeScript'] },
     { label: 'data', items: ['PostgreSQL', 'Oracle', 'SQL Server', 'MySQL'] },
-    { label: 'tooling', items: ['Docker', 'Git', 'GitHub Actions', 'Linux', 'Neovim'] },
+    { label: 'tooling', items: ['Docker', 'Git', 'GitHub Actions', 'Neovim'] },
   ],
   edu: [
     {
@@ -199,7 +199,7 @@ const en: Dict = {
 
 const es: Dict = {
   meta: {
-    title: 'Cimar Rodrigo Morales — Backend Developer',
+    title: 'Cimar Rodrigo Morales · Backend Developer',
     description:
       'Desarrollador backend radicado en La Paz, Bolivia. Construyo servicios backend en el sector financiero, y APIs REST en Go en mi tiempo libre.',
   },
@@ -222,14 +222,14 @@ const es: Dict = {
     'Mi obsesión actual es Go. Construyo APIs REST en mi tiempo libre aplicando arquitectura hexagonal y DDD, y estudio cómo funciona el lenguaje por dentro: concurrencia, internals, las partes que la mayoría se salta.',
   exp: [
     {
-      role: 'Desarrollador de Automatización',
+      role: 'Desarrollador de Automatizaciones',
       company: 'Banco Bisa S.A.',
       date: 'Jul 2025 – Presente',
       loc: 'La Paz, Bolivia',
       desc: 'Desarrollador backend en el equipo de migración, construyendo servicios y aplicaciones internas para las operaciones del banco.',
       bullets: [
         'Diseñé y construí una aplicación interna full-stack de punta a punta: API REST en .NET Core, front end en Angular y persistencia en Oracle, desde los requerimientos hasta producción.',
-        'Desarrollo procesos de migración para el cambio de la plataforma core del banco de AS400/DB2 a Oracle, incluyendo validación y conciliación de datos sobre sistemas en producción.',
+        'Desarrollo herramientas para la migración de la plataforma core del banco de AS400/DB2 a Oracle, incluyendo validación y conciliación de datos sobre sistemas en producción.',
       ],
     },
     {
@@ -244,7 +244,7 @@ const es: Dict = {
       ],
     },
     {
-      role: 'Pasante',
+      role: 'Pasante de Desarrollo Backend',
       company: 'Facultad de Humanidades y Ciencias de la Educación (UMSA)',
       date: 'Jul 2024 – Dic 2024',
       loc: 'La Paz, Bolivia',
@@ -306,7 +306,7 @@ const es: Dict = {
     {
       title: 'Aux-111',
       wip: false,
-      desc: 'Material de enseñanza para Introducción a la Programación en la UMSA. Ejercicios en Java escritos para estudiantes de primer semestre, todavía usados como referencia.',
+      desc: 'Material de enseñanza para Introducción a la Programación en la UMSA. Ejercicios en Java escritos para estudiantes de primer semestre.',
       tags: ['Java', 'Docencia'],
       link: 'https://github.com/CimarRodrigo/Aux-111',
     },
@@ -315,11 +315,11 @@ const es: Dict = {
     { label: 'construyo con', items: ['Go', 'Java / Spring Boot', 'C# / .NET'] },
     { label: 'front end cuando hace falta', items: ['Vue', 'Angular', 'TypeScript'] },
     { label: 'datos', items: ['PostgreSQL', 'Oracle', 'SQL Server', 'MySQL'] },
-    { label: 'herramientas', items: ['Docker', 'Git', 'GitHub Actions', 'Linux', 'Neovim'] },
+    { label: 'herramientas', items: ['Docker', 'Git', 'GitHub Actions', 'Neovim'] },
   ],
   edu: [
     {
-      t: 'Licenciatura en Informática, Ingeniería de Sistemas Computacionales',
+      t: 'Licenciatura en Informática, mención Ingeniería de Sistemas Informáticos',
       s: 'Universidad Mayor de San Andrés · 2019–2025',
       d: 'Tesis desplegada a producción en la Facultad de Humanidades.',
     },
